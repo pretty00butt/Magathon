@@ -29,7 +29,19 @@ class Landing extends Component {
                             e.preventDefault();
                             let nonSleepTime = 24 - this.refs.sleeptime.value;
                             let lifeTimeRatio = this.refs.lifetime.value / parseFloat(nonSleepTime);
-                            console.log(lifeTimeRatio);
+                            let balanceType;
+                            if (lifeTimeRatio < 0.2){
+                                balanceType = 1;
+                            } else if (lifeTimeRatio < 0.4){
+                                balanceType = 2;
+                            } else if (lifeTimeRatio < 0.6){
+                                balanceType = 3;
+                            } else if (lifeTimeRatio < 0.8){
+                                balanceType = 4;
+                            } else {
+                                balanceType = 5;
+                            }
+                            console.log(balanceType);
                         }}>
                             <div className="form-group row">
                                 <label htmlFor="input-worktime" className="col-form-label">
