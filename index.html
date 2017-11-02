@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./index.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div id="root">
+    <div class="App">
+      <div class="container layer nopadding">
+        <div class="col-md-12">
+          <div class="logo">
+            <img src="./img/logo.svg" class="img-logo" alt="" />
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="textarea">
+            <p>춘식씨가 행복하려면 하루의 시간을 어떻게 투자해야 할까요?</p>
+          </div>
+          <div class="choonsik">
+            <img src="./img/choonsik.png" class="img-choonsik" alt="" />
+          </div>
+          <div class="group">
+            <img src="./img/group.svg" class="img-group" alt="" />
+            <form class="form-inline form-work-life">
+              <div class="form-group row">
+                <label for="input-worktime" class="col-form-label">
+                  <img src="./img/label-work.svg" class="label-work" alt="" />
+                </label>
+                <input id="input-worktime" class="form-control" type="text" ref="worktime" />
+              </div>
+
+              <div class="form-group row">
+                <label for="input-lifetime" class="col-form-label">
+                  <img src="./img/label-life.svg" class="label-life" alt="" />
+                </label>
+                <input id="input-lifetime" class="form-control" type="text" ref="lifetime" />
+              </div>
+
+              <div class="form-group row">
+                <label for="input-sleeptime" class="col-form-label">
+                  <img src="./img/label-sleep.svg" class="label-sleep" alt="" />
+                </label>
+                <input id="input-sleeptime" class="form-control" type="text" ref="sleeptime" />
+              </div>
+
+              <button id="btn-submit" type="submit" class="btn btn-primary">GO</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

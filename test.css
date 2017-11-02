@@ -1,0 +1,36 @@
+* {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, red , yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, red , yellow); /* Standard syntax */
+}
+
+div {
+  font-size: 34px;
+}
+
+#axis {
+  width: 1px;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+}
+
+#salary {
+  position: fixed;
+  top: 40%;
+  left: 10%;
+}
+
+#time {
+  position: fixed;
+  top: 40%;
+  right: 10%;
+}
